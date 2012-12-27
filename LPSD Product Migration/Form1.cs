@@ -39,7 +39,6 @@ namespace LPSD_Migration
         // Declare our worker thread
         private Thread workerThread = null;
 
-        // Set the website using the AgilityPackWebsite class then turn it over to the fusk method
         private void startButton_Click(object sender, EventArgs e)
         {
             // Initialise and start worker thread
@@ -47,7 +46,7 @@ namespace LPSD_Migration
             this.workerThread.Start();
         }
 
-        // Set the numerical fusk criteria
+        // Set the fusk criteria
         public void FuskSetup()
         {
             FuskMethodCriteriaProperties fusk = new FuskMethodCriteriaProperties();
